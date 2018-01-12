@@ -11,9 +11,10 @@ namespace Scoreboard.Controllers
     {
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<dynamic> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new[] { new { PlayerName = "Tripa Seca", Score = 10000 },
+                           new { PlayerName = "Alma Negra", Score = 576 }};
         }
 
         // GET api/values/5
